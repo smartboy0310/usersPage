@@ -1,0 +1,116 @@
+.header {
+   padding: 20px 0;
+}
+.header-menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header-logo {
+   border-radius: 50%;
+   object-fit: cover;
+}
+.nav-list {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style-type: none;
+}
+.nav-list__item + .nav-list__item {
+   margin-left: 20px;
+}
+.nav-list__item__link {
+   text-decoration: none;
+   color: #000;
+}
+
+.form {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+.user__input-search,
+.user__select-company {
+   display: inline-block;
+   margin-right: 20px;
+   height: 35px;
+   padding: 5px 15px;
+   border-radius: 5px;
+}
+.user__search-button {
+   display: inline-block;
+   width: 100px;
+   height: 36px;
+   padding: 5px 15px;
+   border: 1px solid #000;
+   border-radius: 5px;
+}
+.hero-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.users__list,
+.users__list-post,
+.users__list-comments {
+   width: 400px;
+   margin: 0;
+   padding: 20px;
+   list-style-type: none;
+  
+}
+p,
+h3 {
+   margin: 0;
+   padding: 0;
+}
+a {
+   text-decoration: none;
+   color: #000;
+}
+.users__list 
+.user__name,
+.user__fullname,
+.user__email,
+.user__address,
+.user__phone,
+.user__company,
+.user__website,
+.user__button,
+.user__avatar,
+.post-heading,
+.post-paragraph {
+   display: block;
+   margin: 0;
+   padding: 0;
+   margin-bottom: 20px;
+   font-size: 20px;
+   text-decoration: none;
+   color: #000;
+}
+.user__avatar {
+   object-fit: cover;
+   border: 1px solid #000;
+    border-radius: 50%;
+}
+.user__button {
+   border-radius: 5px;
+   padding: 5px 25px;
+}
+
+
+.user:hover,
+.post:hover {
+   background-color: darkgray;
+   cursor: pointer;
+}
+.user__post-info {
+   width: 400px;
+}
+.bottom-line {
+   display: inline-block;
+   width: 350px;
+   height: 2px;
+   background-color: #000;
+   margin-bottom: 20px;
+}

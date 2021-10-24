@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<section class="header">
+		<div class="container">
+			<div class="header-menu">
+				<img class="header-logo"
+				src="./images/user.svg"
+				alt="Header logo image"
+				width="80"
+				height="80">
+				
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-list__item">
+							<a class="nav-list__item__link" href="index.html">HOME</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__item__link" href="about.html">ABOUT</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__item__link" href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			
+		</div>
+	</section>
+	<section class="hero">
+		<div class="container">
+			
+			<div class="hero-info">
+				<ul class="users__list">
+					
+				</ul>
+				<ul class="users__list-post">
+					
+				</ul>
+				<ul class="users__list-comments">
+					
+				</ul>
+			</div>
+			
+		</div>
+	</section>
+	
+	<template class="user__template">
+		<li class="user">
+			<img
+			class="user__avatar"
+			src="./images/user.svg"
+			alt="Template image"
+			width="150"
+			height="150"
+			/>
+			
+			<h3 class="user__fullname">User full name</h3>
+			<p class="user__name">user name</p>
+			
+			<a class = "user__email" href="mailto:mail.ru">user email</a>
+			<div class="user__address">
+				Address:
+				<p class="user__address-street"> user address</p>
+				<p class="user__address-suite">user address</p>
+				<p class="user__address-city">user address</p>
+				<p class="user__address-zipcode">user address</p>
+				<a  class="user__address-geo" href="" target="__blank">Geolocation</a>
+			</div>
+			<a class="user__phone" href="tel:" >user phone number</a>
+			<div class="user__company"> 
+				<p class="user__company-name">company-name</p>
+				<p class="user__company-catchphrase">catchPhrase</p>
+				<p class="user__company-bs">bs</p>
+			</div>
+			<a class="user__website" href="" >user website</a>
+			
+			
+			<span class="bottom-line"></span>
+		</li>
+	</template>
+	<template class="user__posts">
+		<li class="post">
+			<h3 class="post-heading">comment tema</h3>
+			<p class="post-paragraph"> comment text</p>
+			<span class="bottom-line"></span>
+		</li>
+	</template>
+	<template class="user__comments">
+		<li class="comment">
+			<h3 class="comment-heading">comment tema</h3>
+			<a class = "user__email-comment" href="mailto:mail.ru">user email</a>
+			<p class="comment-paragraph"> comment text</p>
+			<span class="bottom-line"></span>
+		</li>
+	</template>
+	<script src="js/fetch.js"></script>
+	<script src="js/render.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
